@@ -1,0 +1,73 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+-------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Sat Dec 14 18:58:31 2019
+| Host         : Photonics running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file decode_a_control_sets_placed.rpt
+| Design       : decode_a
+| Device       : xc7a35t
+-------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |     6 |
+| Unused register locations in slices containing registers |    18 |
++----------------------------------------------------------+-------+
+
+
+2. Histogram
+------------
+
++--------+--------------+
+| Fanout | Control Sets |
++--------+--------------+
+|      1 |            1 |
+|      5 |            3 |
+|      6 |            1 |
+|    16+ |            1 |
++--------+--------------+
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              24 |            6 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |               5 |            1 |
+| Yes          | No                    | No                     |              17 |            5 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |               0 |            0 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++----------------+---------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------+------------------+----------------+
+|  Clock Signal  |                                                          Enable Signal                                                          |                                      Set/Reset Signal                                      | Slice Load Count | Bel Load Count |
++----------------+---------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------+------------------+----------------+
+|  clk_IBUF_BUFG | decode_a_struct/serial_to_parallel/fd_array[3].capture/has_latency.fd_array[1].reg_comp_1/fd_prim_array[0].rst_comp.fdre_comp_0 |                                                                                            |                1 |              1 |
+|  clk_IBUF_BUFG |                                                                                                                                 | decode_a_default_clock_driver/clockdriver/clr_reg/has_latency.fd_array[1].reg_comp_1/SR[0] |                1 |              5 |
+|  clk_IBUF_BUFG | decode_a_default_clock_driver/clockdriver_x1/pipelined_ce.ce_pipeline[0].ce_reg/has_latency.fd_array[1].reg_comp_1/p_0_out      |                                                                                            |                1 |              5 |
+|  clk_IBUF_BUFG | decode_a_default_clock_driver/clockdriver_x0/pipelined_ce.ce_pipeline[0].ce_reg/has_latency.fd_array[1].reg_comp_1/p_0_out_0    |                                                                                            |                2 |              5 |
+|  clk_IBUF_BUFG | decode_a_default_clock_driver/clockdriver/pipelined_ce.ce_pipeline[0].ce_reg/has_latency.fd_array[1].reg_comp_1/p_0_out_1       |                                                                                            |                1 |              6 |
+|  clk_IBUF_BUFG |                                                                                                                                 |                                                                                            |                6 |             24 |
++----------------+---------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------+------------------+----------------+
+
+

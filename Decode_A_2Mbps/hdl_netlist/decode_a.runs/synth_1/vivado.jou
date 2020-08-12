@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Sat Dec 14 18:57:26 2019
+# Process ID: 17640
+# Current directory: C:/Users/admin/Desktop/5b6b/Decode_A_2Mbps/hdl_netlist/decode_a.runs/synth_1
+# Command line: vivado.exe -log decode_a.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source decode_a.tcl
+# Log file: C:/Users/admin/Desktop/5b6b/Decode_A_2Mbps/hdl_netlist/decode_a.runs/synth_1/decode_a.vds
+# Journal file: C:/Users/admin/Desktop/5b6b/Decode_A_2Mbps/hdl_netlist/decode_a.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source decode_a.tcl -notrace
