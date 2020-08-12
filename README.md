@@ -1,1 +1,1 @@
-# Flicker-Mitigation
+# Flicker - Mitigation 
