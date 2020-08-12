@@ -8,3 +8,5 @@ I implemented two schemes for flicker mitigation in VLC systems on FPGA board
 * MATLAB and Simulink
 
 ##### Programming Languages: Verilog
+
+Note: Generated bit files are included separately which can be used to program the FPGA board directly using Vivado
