@@ -1,0 +1,97 @@
+{
+  'Line_108' => {
+    'CodeInstance' => 'decode_b_struct/parallel_to_serial',
+    'Instance' => 'parallel_to_serial',
+    'SimulinkInstance' => 'Decode_B/Parallel to Serial'
+  },
+  'Line_131' => {
+    'CodeInstance' => 'decode_b_struct/serial_to_parallel',
+    'Instance' => 'serial_to_parallel',
+    'SimulinkInstance' => 'Decode_B/Serial to Parallel'
+  },
+  'Line_149' => {
+    'CodeInstance' => 'decode_b_struct/slice',
+    'Instance' => 'slice',
+    'SimulinkInstance' => 'Decode_B/Slice'
+  },
+  'Line_159' => {
+    'CodeInstance' => 'decode_b_struct/slice1',
+    'Instance' => 'slice1',
+    'SimulinkInstance' => 'Decode_B/Slice1'
+  },
+  'Line_169' => {
+    'CodeInstance' => 'decode_b_struct/slice2',
+    'Instance' => 'slice2',
+    'SimulinkInstance' => 'Decode_B/Slice2'
+  },
+  'Line_179' => {
+    'CodeInstance' => 'decode_b_struct/slice3',
+    'Instance' => 'slice3',
+    'SimulinkInstance' => 'Decode_B/Slice3'
+  },
+  'Line_189' => {
+    'CodeInstance' => 'decode_b_struct/slice4',
+    'Instance' => 'slice4',
+    'SimulinkInstance' => 'Decode_B/Slice4'
+  },
+  'Line_199' => {
+    'CodeInstance' => 'decode_b_struct/slice5',
+    'Instance' => 'slice5',
+    'SimulinkInstance' => 'Decode_B/Slice5'
+  },
+  'Line_221' => {
+    'CodeInstance' => 'decode_b_default_clock_driver/clockdriver_x1',
+    'Instance' => 'clockdriver_x1',
+    'SimulinkInstance' => ''
+  },
+  'Line_232' => {
+    'CodeInstance' => 'decode_b_default_clock_driver/clockdriver_x0',
+    'Instance' => 'clockdriver_x0',
+    'SimulinkInstance' => ''
+  },
+  'Line_243' => {
+    'CodeInstance' => 'decode_b_default_clock_driver/clockdriver',
+    'Instance' => 'clockdriver',
+    'SimulinkInstance' => ''
+  },
+  'Line_265' => {
+    'CodeInstance' => 'decode_b_default_clock_driver',
+    'Instance' => 'decode_b_default_clock_driver',
+    'SimulinkInstance' => ''
+  },
+  'Line_276' => {
+    'CodeInstance' => 'decode_b_struct',
+    'Instance' => 'decode_b_struct',
+    'SimulinkInstance' => 'Decode_B'
+  },
+  'Line_46' => {
+    'CodeInstance' => 'decode_b_struct/concat',
+    'Instance' => 'concat',
+    'SimulinkInstance' => 'Decode_B/Concat'
+  },
+  'Line_57' => {
+    'CodeInstance' => 'decode_b_struct/logical',
+    'Instance' => 'logical',
+    'SimulinkInstance' => 'Decode_B/Logical'
+  },
+  'Line_65' => {
+    'CodeInstance' => 'decode_b_struct/logical1',
+    'Instance' => 'logical1',
+    'SimulinkInstance' => 'Decode_B/Logical1'
+  },
+  'Line_73' => {
+    'CodeInstance' => 'decode_b_struct/logical2',
+    'Instance' => 'logical2',
+    'SimulinkInstance' => 'Decode_B/Logical2'
+  },
+  'Line_81' => {
+    'CodeInstance' => 'decode_b_struct/logical3',
+    'Instance' => 'logical3',
+    'SimulinkInstance' => 'Decode_B/Logical3'
+  },
+  'Line_89' => {
+    'CodeInstance' => 'decode_b_struct/logical4',
+    'Instance' => 'logical4',
+    'SimulinkInstance' => 'Decode_B/Logical4'
+  }
+}
