@@ -1,4 +1,4 @@
-### Flicker Mitigation schemes for Visual Light Communication Systems
+## Flicker Mitigation schemes for Visual Light Communication Systems
 
 I implemented two schemes for flicker mitigation in VLC systems on FPGA board
 
