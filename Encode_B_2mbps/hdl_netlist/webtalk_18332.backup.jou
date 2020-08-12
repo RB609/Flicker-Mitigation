@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Sat Dec 14 18:54:03 2019
+# Process ID: 18332
+# Current directory: C:/Users/admin/Desktop/5b6b/B_2mbps/hdl_netlist
+# Command line: wbtcv.exe -mode batch -source C:/Users/admin/Desktop/5b6b/B_2mbps/hdl_netlist/encode_b.hw/webtalk/labtool_webtalk.tcl -notrace
+# Log file: C:/Users/admin/Desktop/5b6b/B_2mbps/hdl_netlist/webtalk.log
+# Journal file: C:/Users/admin/Desktop/5b6b/B_2mbps/hdl_netlist\webtalk.jou
+#-----------------------------------------------------------
+source C:/Users/admin/Desktop/5b6b/B_2mbps/hdl_netlist/encode_b.hw/webtalk/labtool_webtalk.tcl -notrace

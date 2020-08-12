@@ -1,0 +1,50 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Sat Dec 14 18:36:42 2019
+# Process ID: 3008
+# Current directory: C:/Users/admin/Desktop/5b6b/B_2mbps/hdl_netlist
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent3188 C:\Users\admin\Desktop\5b6b\B_2mbps\hdl_netlist\encode_b.xpr
+# Log file: C:/Users/admin/Desktop/5b6b/B_2mbps/hdl_netlist/vivado.log
+# Journal file: C:/Users/admin/Desktop/5b6b/B_2mbps/hdl_netlist\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/admin/Desktop/5b6b/B_2mbps/hdl_netlist/encode_b.xpr
+update_compile_order -fileset sources_1
+file mkdir C:/Users/admin/Desktop/5b6b/B_2mbps/hdl_netlist/encode_b.srcs/constrs_1/new
+close [ open C:/Users/admin/Desktop/5b6b/B_2mbps/hdl_netlist/encode_b.srcs/constrs_1/new/cons.xdc w ]
+add_files -fileset constrs_1 C:/Users/admin/Desktop/5b6b/B_2mbps/hdl_netlist/encode_b.srcs/constrs_1/new/cons.xdc
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+open_hw
+close_hw
+open_hw
+connect_hw_server
+open_project C:/Users/admin/Desktop/5b6b/Decode_A_2Mbps/hdl_netlist/decode_a.xpr
+current_project encode_b
+close_project
+update_compile_order -fileset sources_1
+file mkdir C:/Users/admin/Desktop/5b6b/Decode_A_2Mbps/hdl_netlist/decode_a.srcs/constrs_1/new
+close [ open C:/Users/admin/Desktop/5b6b/Decode_A_2Mbps/hdl_netlist/decode_a.srcs/constrs_1/new/cons.xdc w ]
+add_files -fileset constrs_1 C:/Users/admin/Desktop/5b6b/Decode_A_2Mbps/hdl_netlist/decode_a.srcs/constrs_1/new/cons.xdc
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+open_hw
+close_hw
+close_project
+open_project C:/Users/admin/Desktop/5b6b/Decode_B_2Mbps/hdl_netlist/decode_b.xpr
+update_compile_order -fileset sources_1
+file mkdir C:/Users/admin/Desktop/5b6b/Decode_B_2Mbps/hdl_netlist/decode_b.srcs/constrs_1/new
+close [ open C:/Users/admin/Desktop/5b6b/Decode_B_2Mbps/hdl_netlist/decode_b.srcs/constrs_1/new/cons.xdc w ]
+add_files -fileset constrs_1 C:/Users/admin/Desktop/5b6b/Decode_B_2Mbps/hdl_netlist/decode_b.srcs/constrs_1/new/cons.xdc
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+close_project
+open_project C:/Users/admin/Desktop/5b6b/Encode_A_2Mbps/hdl_netlist/func1.xpr
+update_compile_order -fileset sources_1
+file mkdir C:/Users/admin/Desktop/5b6b/Encode_A_2Mbps/hdl_netlist/func1.srcs/constrs_1/new
+close [ open C:/Users/admin/Desktop/5b6b/Encode_A_2Mbps/hdl_netlist/func1.srcs/constrs_1/new/cons.xdc w ]
+add_files -fileset constrs_1 C:/Users/admin/Desktop/5b6b/Encode_A_2Mbps/hdl_netlist/func1.srcs/constrs_1/new/cons.xdc
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
