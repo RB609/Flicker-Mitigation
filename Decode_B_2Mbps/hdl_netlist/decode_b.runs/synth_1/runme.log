@@ -1,0 +1,669 @@
+
+*** Running vivado
+    with args -log decode_b.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source decode_b.tcl
+
+
+****** Vivado v2018.3 (64-bit)
+  **** SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+  **** IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source decode_b.tcl -notrace
+Command: synth_design -top decode_b -part xc7a35tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 18084 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 362.117 ; gain = 100.789
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'decode_b' [C:/Users/admin/Desktop/5b6b/Decode_B_2Mbps/hdl_netlist/decode_b.srcs/sources_1/imports/sysgen/decode_b.v:254]
+INFO: [Synth 8-6157] synthesizing module 'decode_b_default_clock_driver' [C:/Users/admin/Desktop/5b6b/Decode_B_2Mbps/hdl_netlist/decode_b.srcs/sources_1/imports/sysgen/decode_b.v:206]
+INFO: [Synth 8-6157] synthesizing module 'xlclockdriver' [C:/Users/admin/Desktop/5b6b/Decode_B_2Mbps/hdl_netlist/decode_b.srcs/sources_1/imports/sysgen/xlclockdriver_rd.v:22]
+	Parameter log_2_period bound to: 32'sb00000000000000000000000000000011 
+	Parameter period bound to: 32'sb00000000000000000000000000000101 
+	Parameter use_bufg bound to: 0 - type: integer 
+	Parameter pipeline_regs bound to: 32'sb00000000000000000000000000000101 
+	Parameter max_pipeline_regs bound to: 32'sb00000000000000000000000000001000 
+	Parameter num_pipeline_regs bound to: 32'sb00000000000000000000000000000101 
+	Parameter factor bound to: 32'sb00000000000000000000000000000001 
+	Parameter rem_pipeline_regs bound to: 32'sb00000000000000000000000000000001 
+	Parameter trunc_period bound to: 3'b011 
+	Parameter period_floor bound to: 32'sb00000000000000000000000000000101 
+	Parameter power_of_2_counter bound to: 32'sb00000000000000000000000000000000 
+	Parameter cnt_width bound to: 32'sb00000000000000000000000000000011 
+	Parameter clk_for_ce_pulse_minus1 bound to: 3'b011 
+	Parameter clk_for_ce_pulse_minus2 bound to: 3'b010 
+	Parameter clk_for_ce_pulse_minus_regs bound to: 3'b100 
+INFO: [Synth 8-6157] synthesizing module 'synth_reg_w_init' [C:/Users/admin/Desktop/5b6b/Decode_B_2Mbps/hdl_netlist/decode_b.srcs/sources_1/imports/sysgen/synth_reg_w_init.v:3]
+	Parameter width bound to: 1 - type: integer 
+	Parameter init_index bound to: 0 - type: integer 
+	Parameter init_value bound to: 1'b0 
+	Parameter latency bound to: 1 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'single_reg_w_init' [C:/Users/admin/Desktop/5b6b/Decode_B_2Mbps/hdl_netlist/decode_b.srcs/sources_1/imports/sysgen/synth_reg_w_init.v:45]
+	Parameter width bound to: 1 - type: integer 
+	Parameter init_index bound to: 0 - type: integer 
+	Parameter init_value bound to: 1'b0 
+	Parameter init_index_val bound to: 1'b0 
+	Parameter result bound to: 1'b0 
+	Parameter init_const bound to: 1'b0 
+INFO: [Synth 8-6157] synthesizing module 'FDRE' [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:3971]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-6155] done synthesizing module 'FDRE' (1#1) [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:3971]
+INFO: [Synth 8-6155] done synthesizing module 'single_reg_w_init' (2#1) [C:/Users/admin/Desktop/5b6b/Decode_B_2Mbps/hdl_netlist/decode_b.srcs/sources_1/imports/sysgen/synth_reg_w_init.v:45]
+INFO: [Synth 8-6155] done synthesizing module 'synth_reg_w_init' (3#1) [C:/Users/admin/Desktop/5b6b/Decode_B_2Mbps/hdl_netlist/decode_b.srcs/sources_1/imports/sysgen/synth_reg_w_init.v:3]
+INFO: [Synth 8-6157] synthesizing module 'synth_reg_w_init__parameterized0' [C:/Users/admin/Desktop/5b6b/Decode_B_2Mbps/hdl_netlist/decode_b.srcs/sources_1/imports/sysgen/synth_reg_w_init.v:3]
+	Parameter width bound to: 1 - type: integer 
+	Parameter init_index bound to: 1 - type: integer 
+	Parameter init_value bound to: 1'b0 
+	Parameter latency bound to: 1 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'single_reg_w_init__parameterized0' [C:/Users/admin/Desktop/5b6b/Decode_B_2Mbps/hdl_netlist/decode_b.srcs/sources_1/imports/sysgen/synth_reg_w_init.v:45]
+	Parameter width bound to: 1 - type: integer 
+	Parameter init_index bound to: 1 - type: integer 
+	Parameter init_value bound to: 1'b0 
+	Parameter init_index_val bound to: 1'b1 
+	Parameter result bound to: 1'b1 
+	Parameter init_const bound to: 1'b1 
+INFO: [Synth 8-6157] synthesizing module 'FDSE' [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:4107]
+	Parameter INIT bound to: 1'b1 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_S_INVERTED bound to: 1'b0 
+INFO: [Synth 8-6155] done synthesizing module 'FDSE' (4#1) [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:4107]
+INFO: [Synth 8-6155] done synthesizing module 'single_reg_w_init__parameterized0' (4#1) [C:/Users/admin/Desktop/5b6b/Decode_B_2Mbps/hdl_netlist/decode_b.srcs/sources_1/imports/sysgen/synth_reg_w_init.v:45]
+INFO: [Synth 8-6155] done synthesizing module 'synth_reg_w_init__parameterized0' (4#1) [C:/Users/admin/Desktop/5b6b/Decode_B_2Mbps/hdl_netlist/decode_b.srcs/sources_1/imports/sysgen/synth_reg_w_init.v:3]
+INFO: [Synth 8-6157] synthesizing module 'synth_reg_w_init__parameterized1' [C:/Users/admin/Desktop/5b6b/Decode_B_2Mbps/hdl_netlist/decode_b.srcs/sources_1/imports/sysgen/synth_reg_w_init.v:3]
+	Parameter width bound to: 1 - type: integer 
+	Parameter init_index bound to: 0 - type: integer 
+	Parameter init_value bound to: 1'b0 
+	Parameter latency bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'synth_reg_w_init__parameterized1' (4#1) [C:/Users/admin/Desktop/5b6b/Decode_B_2Mbps/hdl_netlist/decode_b.srcs/sources_1/imports/sysgen/synth_reg_w_init.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'xlclockdriver' (5#1) [C:/Users/admin/Desktop/5b6b/Decode_B_2Mbps/hdl_netlist/decode_b.srcs/sources_1/imports/sysgen/xlclockdriver_rd.v:22]
+WARNING: [Synth 8-350] instance 'clockdriver_x1' of module 'xlclockdriver' requires 7 connections, but only 5 given [C:/Users/admin/Desktop/5b6b/Decode_B_2Mbps/hdl_netlist/decode_b.srcs/sources_1/imports/sysgen/decode_b.v:221]
+INFO: [Synth 8-6157] synthesizing module 'xlclockdriver__parameterized0' [C:/Users/admin/Desktop/5b6b/Decode_B_2Mbps/hdl_netlist/decode_b.srcs/sources_1/imports/sysgen/xlclockdriver_rd.v:22]
+	Parameter log_2_period bound to: 32'sb00000000000000000000000000000011 
+	Parameter period bound to: 32'sb00000000000000000000000000000110 
+	Parameter use_bufg bound to: 0 - type: integer 
+	Parameter pipeline_regs bound to: 32'sb00000000000000000000000000000101 
+	Parameter max_pipeline_regs bound to: 32'sb00000000000000000000000000001000 
+	Parameter num_pipeline_regs bound to: 32'sb00000000000000000000000000000101 
+	Parameter factor bound to: 32'sb00000000000000000000000000000000 
+	Parameter rem_pipeline_regs bound to: 32'sb00000000000000000000000000000110 
+	Parameter trunc_period bound to: 3'b010 
+	Parameter period_floor bound to: 32'sb00000000000000000000000000000110 
+	Parameter power_of_2_counter bound to: 32'sb00000000000000000000000000000000 
+	Parameter cnt_width bound to: 32'sb00000000000000000000000000000011 
+	Parameter clk_for_ce_pulse_minus1 bound to: 3'b100 
+	Parameter clk_for_ce_pulse_minus2 bound to: 3'b011 
+	Parameter clk_for_ce_pulse_minus_regs bound to: 3'b000 
+INFO: [Synth 8-6155] done synthesizing module 'xlclockdriver__parameterized0' (5#1) [C:/Users/admin/Desktop/5b6b/Decode_B_2Mbps/hdl_netlist/decode_b.srcs/sources_1/imports/sysgen/xlclockdriver_rd.v:22]
+WARNING: [Synth 8-350] instance 'clockdriver_x0' of module 'xlclockdriver' requires 7 connections, but only 5 given [C:/Users/admin/Desktop/5b6b/Decode_B_2Mbps/hdl_netlist/decode_b.srcs/sources_1/imports/sysgen/decode_b.v:232]
+INFO: [Synth 8-6157] synthesizing module 'xlclockdriver__parameterized1' [C:/Users/admin/Desktop/5b6b/Decode_B_2Mbps/hdl_netlist/decode_b.srcs/sources_1/imports/sysgen/xlclockdriver_rd.v:22]
+	Parameter log_2_period bound to: 32'sb00000000000000000000000000000101 
+	Parameter period bound to: 32'sb00000000000000000000000000011110 
+	Parameter use_bufg bound to: 0 - type: integer 
+	Parameter pipeline_regs bound to: 32'sb00000000000000000000000000000101 
+	Parameter max_pipeline_regs bound to: 32'sb00000000000000000000000000001000 
+	Parameter num_pipeline_regs bound to: 32'sb00000000000000000000000000000101 
+	Parameter factor bound to: 32'sb00000000000000000000000000000000 
+	Parameter rem_pipeline_regs bound to: 32'sb00000000000000000000000000000110 
+	Parameter trunc_period bound to: 5'b00010 
+	Parameter period_floor bound to: 32'sb00000000000000000000000000011110 
+	Parameter power_of_2_counter bound to: 32'sb00000000000000000000000000000000 
+	Parameter cnt_width bound to: 32'sb00000000000000000000000000000101 
+	Parameter clk_for_ce_pulse_minus1 bound to: 5'b11100 
+	Parameter clk_for_ce_pulse_minus2 bound to: 5'b11011 
+	Parameter clk_for_ce_pulse_minus_regs bound to: 5'b11000 
+INFO: [Synth 8-6155] done synthesizing module 'xlclockdriver__parameterized1' (5#1) [C:/Users/admin/Desktop/5b6b/Decode_B_2Mbps/hdl_netlist/decode_b.srcs/sources_1/imports/sysgen/xlclockdriver_rd.v:22]
+WARNING: [Synth 8-350] instance 'clockdriver' of module 'xlclockdriver' requires 7 connections, but only 5 given [C:/Users/admin/Desktop/5b6b/Decode_B_2Mbps/hdl_netlist/decode_b.srcs/sources_1/imports/sysgen/decode_b.v:243]
+INFO: [Synth 8-6155] done synthesizing module 'decode_b_default_clock_driver' (6#1) [C:/Users/admin/Desktop/5b6b/Decode_B_2Mbps/hdl_netlist/decode_b.srcs/sources_1/imports/sysgen/decode_b.v:206]
+INFO: [Synth 8-6157] synthesizing module 'decode_b_struct' [C:/Users/admin/Desktop/5b6b/Decode_B_2Mbps/hdl_netlist/decode_b.srcs/sources_1/imports/sysgen/decode_b.v:7]
+INFO: [Synth 8-6157] synthesizing module 'sysgen_concat_57ef5461e6' [C:/Users/admin/Desktop/5b6b/Decode_B_2Mbps/hdl_netlist/decode_b.srcs/sources_1/imports/sysgen/decode_b_entity_declarations.v:39]
+INFO: [Synth 8-6155] done synthesizing module 'sysgen_concat_57ef5461e6' (7#1) [C:/Users/admin/Desktop/5b6b/Decode_B_2Mbps/hdl_netlist/decode_b.srcs/sources_1/imports/sysgen/decode_b_entity_declarations.v:39]
+INFO: [Synth 8-6157] synthesizing module 'sysgen_logical_e16e76389c' [C:/Users/admin/Desktop/5b6b/Decode_B_2Mbps/hdl_netlist/decode_b.srcs/sources_1/imports/sysgen/decode_b_entity_declarations.v:64]
+INFO: [Synth 8-6155] done synthesizing module 'sysgen_logical_e16e76389c' (8#1) [C:/Users/admin/Desktop/5b6b/Decode_B_2Mbps/hdl_netlist/decode_b.srcs/sources_1/imports/sysgen/decode_b_entity_declarations.v:64]
+INFO: [Synth 8-6157] synthesizing module 'decode_b_xlp2s' [C:/Users/admin/Desktop/5b6b/Decode_B_2Mbps/hdl_netlist/decode_b.srcs/sources_1/imports/sysgen/decode_b_entity_declarations.v:82]
+	Parameter dout_width bound to: 1 - type: integer 
+	Parameter dout_arith bound to: 1 - type: integer 
+	Parameter dout_bin_pt bound to: 0 - type: integer 
+	Parameter din_width bound to: 5 - type: integer 
+	Parameter din_arith bound to: 1 - type: integer 
+	Parameter din_bin_pt bound to: 0 - type: integer 
+	Parameter rst_width bound to: 1 - type: integer 
+	Parameter rst_bin_pt bound to: 0 - type: integer 
+	Parameter rst_arith bound to: 1 - type: integer 
+	Parameter en_width bound to: 1 - type: integer 
+	Parameter en_bin_pt bound to: 0 - type: integer 
+	Parameter en_arith bound to: 1 - type: integer 
+	Parameter lsb_first bound to: 0 - type: integer 
+	Parameter latency bound to: 0 - type: integer 
+	Parameter num_outputs bound to: 5 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'p2s_bit_reverse_decode_b_xlp2s' [C:/Users/admin/Desktop/5b6b/Decode_B_2Mbps/hdl_netlist/decode_b.srcs/sources_1/imports/sysgen/decode_b_entity_declarations.v:188]
+	Parameter din_width bound to: 5 - type: integer 
+	Parameter dout_width bound to: 1 - type: integer 
+	Parameter num_outputs bound to: 5 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'p2s_bit_reverse_decode_b_xlp2s' (9#1) [C:/Users/admin/Desktop/5b6b/Decode_B_2Mbps/hdl_netlist/decode_b.srcs/sources_1/imports/sysgen/decode_b_entity_declarations.v:188]
+INFO: [Synth 8-6155] done synthesizing module 'decode_b_xlp2s' (10#1) [C:/Users/admin/Desktop/5b6b/Decode_B_2Mbps/hdl_netlist/decode_b.srcs/sources_1/imports/sysgen/decode_b_entity_declarations.v:82]
+INFO: [Synth 8-6157] synthesizing module 'decode_b_xls2p' [C:/Users/admin/Desktop/5b6b/Decode_B_2Mbps/hdl_netlist/decode_b.srcs/sources_1/imports/sysgen/decode_b_entity_declarations.v:206]
+	Parameter dout_width bound to: 32'sb00000000000000000000000000000110 
+	Parameter dout_arith bound to: 32'sb00000000000000000000000000000001 
+	Parameter dout_bin_pt bound to: 32'sb00000000000000000000000000000000 
+	Parameter din_width bound to: 32'sb00000000000000000000000000000001 
+	Parameter din_arith bound to: 32'sb00000000000000000000000000000001 
+	Parameter din_bin_pt bound to: 32'sb00000000000000000000000000000000 
+	Parameter rst_width bound to: 32'sb00000000000000000000000000000001 
+	Parameter rst_bin_pt bound to: 32'sb00000000000000000000000000000000 
+	Parameter rst_arith bound to: 32'sb00000000000000000000000000000001 
+	Parameter en_width bound to: 32'sb00000000000000000000000000000001 
+	Parameter en_bin_pt bound to: 32'sb00000000000000000000000000000000 
+	Parameter en_arith bound to: 32'sb00000000000000000000000000000001 
+	Parameter lsb_first bound to: 32'sb00000000000000000000000000000000 
+	Parameter latency bound to: 32'sb00000000000000000000000000000001 
+	Parameter num_inputs bound to: 32'sb00000000000000000000000000000110 
+INFO: [Synth 8-6157] synthesizing module 'synth_reg' [C:/Users/admin/Desktop/5b6b/Decode_B_2Mbps/hdl_netlist/decode_b.srcs/sources_1/imports/sysgen/synth_reg.v:94]
+	Parameter width bound to: 1 - type: integer 
+	Parameter latency bound to: 1 - type: integer 
+	Parameter complete_num_srlc33es bound to: 0 - type: integer 
+	Parameter remaining_latency bound to: 1 - type: integer 
+	Parameter temp_num_srlc33es bound to: 1 - type: integer 
+	Parameter num_srlc33es bound to: 1 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'srlc33e' [C:/Users/admin/Desktop/5b6b/Decode_B_2Mbps/hdl_netlist/decode_b.srcs/sources_1/imports/sysgen/synth_reg.v:60]
+	Parameter width bound to: 1 - type: integer 
+	Parameter latency bound to: 1 - type: integer 
+	Parameter a bound to: 6'sb111111 
+INFO: [Synth 8-6157] synthesizing module 'FDE' [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:3872]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-6155] done synthesizing module 'FDE' (11#1) [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:3872]
+INFO: [Synth 8-6155] done synthesizing module 'srlc33e' (12#1) [C:/Users/admin/Desktop/5b6b/Decode_B_2Mbps/hdl_netlist/decode_b.srcs/sources_1/imports/sysgen/synth_reg.v:60]
+INFO: [Synth 8-6155] done synthesizing module 'synth_reg' (13#1) [C:/Users/admin/Desktop/5b6b/Decode_B_2Mbps/hdl_netlist/decode_b.srcs/sources_1/imports/sysgen/synth_reg.v:94]
+INFO: [Synth 8-6157] synthesizing module 's2p_bit_reverse' [C:/Users/admin/Desktop/5b6b/Decode_B_2Mbps/hdl_netlist/decode_b.srcs/sources_1/imports/sysgen/decode_b_entity_declarations.v:307]
+	Parameter din_width bound to: 32'sb00000000000000000000000000000001 
+	Parameter dout_width bound to: 32'sb00000000000000000000000000000110 
+	Parameter num_inputs bound to: 32'sb00000000000000000000000000000110 
+INFO: [Synth 8-6155] done synthesizing module 's2p_bit_reverse' (14#1) [C:/Users/admin/Desktop/5b6b/Decode_B_2Mbps/hdl_netlist/decode_b.srcs/sources_1/imports/sysgen/decode_b_entity_declarations.v:307]
+INFO: [Synth 8-6155] done synthesizing module 'decode_b_xls2p' (15#1) [C:/Users/admin/Desktop/5b6b/Decode_B_2Mbps/hdl_netlist/decode_b.srcs/sources_1/imports/sysgen/decode_b_entity_declarations.v:206]
+INFO: [Synth 8-6157] synthesizing module 'decode_b_xlslice' [C:/Users/admin/Desktop/5b6b/Decode_B_2Mbps/hdl_netlist/decode_b.srcs/sources_1/imports/sysgen/decode_b_entity_declarations.v:326]
+	Parameter new_msb bound to: 5 - type: integer 
+	Parameter new_lsb bound to: 5 - type: integer 
+	Parameter x_width bound to: 6 - type: integer 
+	Parameter y_width bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'decode_b_xlslice' (16#1) [C:/Users/admin/Desktop/5b6b/Decode_B_2Mbps/hdl_netlist/decode_b.srcs/sources_1/imports/sysgen/decode_b_entity_declarations.v:326]
+INFO: [Synth 8-6157] synthesizing module 'decode_b_xlslice__parameterized0' [C:/Users/admin/Desktop/5b6b/Decode_B_2Mbps/hdl_netlist/decode_b.srcs/sources_1/imports/sysgen/decode_b_entity_declarations.v:326]
+	Parameter new_msb bound to: 4 - type: integer 
+	Parameter new_lsb bound to: 4 - type: integer 
+	Parameter x_width bound to: 6 - type: integer 
+	Parameter y_width bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'decode_b_xlslice__parameterized0' (16#1) [C:/Users/admin/Desktop/5b6b/Decode_B_2Mbps/hdl_netlist/decode_b.srcs/sources_1/imports/sysgen/decode_b_entity_declarations.v:326]
+INFO: [Synth 8-6157] synthesizing module 'decode_b_xlslice__parameterized1' [C:/Users/admin/Desktop/5b6b/Decode_B_2Mbps/hdl_netlist/decode_b.srcs/sources_1/imports/sysgen/decode_b_entity_declarations.v:326]
+	Parameter new_msb bound to: 3 - type: integer 
+	Parameter new_lsb bound to: 3 - type: integer 
+	Parameter x_width bound to: 6 - type: integer 
+	Parameter y_width bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'decode_b_xlslice__parameterized1' (16#1) [C:/Users/admin/Desktop/5b6b/Decode_B_2Mbps/hdl_netlist/decode_b.srcs/sources_1/imports/sysgen/decode_b_entity_declarations.v:326]
+INFO: [Synth 8-6157] synthesizing module 'decode_b_xlslice__parameterized2' [C:/Users/admin/Desktop/5b6b/Decode_B_2Mbps/hdl_netlist/decode_b.srcs/sources_1/imports/sysgen/decode_b_entity_declarations.v:326]
+	Parameter new_msb bound to: 2 - type: integer 
+	Parameter new_lsb bound to: 2 - type: integer 
+	Parameter x_width bound to: 6 - type: integer 
+	Parameter y_width bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'decode_b_xlslice__parameterized2' (16#1) [C:/Users/admin/Desktop/5b6b/Decode_B_2Mbps/hdl_netlist/decode_b.srcs/sources_1/imports/sysgen/decode_b_entity_declarations.v:326]
+INFO: [Synth 8-6157] synthesizing module 'decode_b_xlslice__parameterized3' [C:/Users/admin/Desktop/5b6b/Decode_B_2Mbps/hdl_netlist/decode_b.srcs/sources_1/imports/sysgen/decode_b_entity_declarations.v:326]
+	Parameter new_msb bound to: 1 - type: integer 
+	Parameter new_lsb bound to: 1 - type: integer 
+	Parameter x_width bound to: 6 - type: integer 
+	Parameter y_width bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'decode_b_xlslice__parameterized3' (16#1) [C:/Users/admin/Desktop/5b6b/Decode_B_2Mbps/hdl_netlist/decode_b.srcs/sources_1/imports/sysgen/decode_b_entity_declarations.v:326]
+INFO: [Synth 8-6157] synthesizing module 'decode_b_xlslice__parameterized4' [C:/Users/admin/Desktop/5b6b/Decode_B_2Mbps/hdl_netlist/decode_b.srcs/sources_1/imports/sysgen/decode_b_entity_declarations.v:326]
+	Parameter new_msb bound to: 0 - type: integer 
+	Parameter new_lsb bound to: 0 - type: integer 
+	Parameter x_width bound to: 6 - type: integer 
+	Parameter y_width bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'decode_b_xlslice__parameterized4' (16#1) [C:/Users/admin/Desktop/5b6b/Decode_B_2Mbps/hdl_netlist/decode_b.srcs/sources_1/imports/sysgen/decode_b_entity_declarations.v:326]
+INFO: [Synth 8-6155] done synthesizing module 'decode_b_struct' (17#1) [C:/Users/admin/Desktop/5b6b/Decode_B_2Mbps/hdl_netlist/decode_b.srcs/sources_1/imports/sysgen/decode_b.v:7]
+INFO: [Synth 8-6155] done synthesizing module 'decode_b' (18#1) [C:/Users/admin/Desktop/5b6b/Decode_B_2Mbps/hdl_netlist/decode_b.srcs/sources_1/imports/sysgen/decode_b.v:254]
+WARNING: [Synth 8-3331] design decode_b_xlslice__parameterized4 has unconnected port x[5]
+WARNING: [Synth 8-3331] design decode_b_xlslice__parameterized4 has unconnected port x[4]
+WARNING: [Synth 8-3331] design decode_b_xlslice__parameterized4 has unconnected port x[3]
+WARNING: [Synth 8-3331] design decode_b_xlslice__parameterized4 has unconnected port x[2]
+WARNING: [Synth 8-3331] design decode_b_xlslice__parameterized4 has unconnected port x[1]
+WARNING: [Synth 8-3331] design decode_b_xlslice__parameterized3 has unconnected port x[5]
+WARNING: [Synth 8-3331] design decode_b_xlslice__parameterized3 has unconnected port x[4]
+WARNING: [Synth 8-3331] design decode_b_xlslice__parameterized3 has unconnected port x[3]
+WARNING: [Synth 8-3331] design decode_b_xlslice__parameterized3 has unconnected port x[2]
+WARNING: [Synth 8-3331] design decode_b_xlslice__parameterized3 has unconnected port x[0]
+WARNING: [Synth 8-3331] design decode_b_xlslice__parameterized2 has unconnected port x[5]
+WARNING: [Synth 8-3331] design decode_b_xlslice__parameterized2 has unconnected port x[4]
+WARNING: [Synth 8-3331] design decode_b_xlslice__parameterized2 has unconnected port x[3]
+WARNING: [Synth 8-3331] design decode_b_xlslice__parameterized2 has unconnected port x[1]
+WARNING: [Synth 8-3331] design decode_b_xlslice__parameterized2 has unconnected port x[0]
+WARNING: [Synth 8-3331] design decode_b_xlslice__parameterized1 has unconnected port x[5]
+WARNING: [Synth 8-3331] design decode_b_xlslice__parameterized1 has unconnected port x[4]
+WARNING: [Synth 8-3331] design decode_b_xlslice__parameterized1 has unconnected port x[2]
+WARNING: [Synth 8-3331] design decode_b_xlslice__parameterized1 has unconnected port x[1]
+WARNING: [Synth 8-3331] design decode_b_xlslice__parameterized1 has unconnected port x[0]
+WARNING: [Synth 8-3331] design decode_b_xlslice__parameterized0 has unconnected port x[5]
+WARNING: [Synth 8-3331] design decode_b_xlslice__parameterized0 has unconnected port x[3]
+WARNING: [Synth 8-3331] design decode_b_xlslice__parameterized0 has unconnected port x[2]
+WARNING: [Synth 8-3331] design decode_b_xlslice__parameterized0 has unconnected port x[1]
+WARNING: [Synth 8-3331] design decode_b_xlslice__parameterized0 has unconnected port x[0]
+WARNING: [Synth 8-3331] design decode_b_xlslice has unconnected port x[4]
+WARNING: [Synth 8-3331] design decode_b_xlslice has unconnected port x[3]
+WARNING: [Synth 8-3331] design decode_b_xlslice has unconnected port x[2]
+WARNING: [Synth 8-3331] design decode_b_xlslice has unconnected port x[1]
+WARNING: [Synth 8-3331] design decode_b_xlslice has unconnected port x[0]
+WARNING: [Synth 8-3331] design synth_reg has unconnected port clr
+WARNING: [Synth 8-3331] design sysgen_logical_e16e76389c has unconnected port clk
+WARNING: [Synth 8-3331] design sysgen_logical_e16e76389c has unconnected port ce
+WARNING: [Synth 8-3331] design sysgen_logical_e16e76389c has unconnected port clr
+WARNING: [Synth 8-3331] design sysgen_concat_57ef5461e6 has unconnected port clk
+WARNING: [Synth 8-3331] design sysgen_concat_57ef5461e6 has unconnected port ce
+WARNING: [Synth 8-3331] design sysgen_concat_57ef5461e6 has unconnected port clr
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 418.809 ; gain = 157.480
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 418.809 ; gain = 157.480
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 418.809 ; gain = 157.480
+---------------------------------------------------------------------------------
+INFO: [Netlist 29-17] Analyzing 6 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Device 21-403] Loading part xc7a35tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/admin/Desktop/5b6b/Decode_B_2Mbps/hdl_netlist/decode_b.srcs/constrs_1/imports/sysgen/decode_b_clock.xdc]
+Finished Parsing XDC File [C:/Users/admin/Desktop/5b6b/Decode_B_2Mbps/hdl_netlist/decode_b.srcs/constrs_1/imports/sysgen/decode_b_clock.xdc]
+Parsing XDC File [C:/Users/admin/Desktop/5b6b/Decode_B_2Mbps/hdl_netlist/decode_b.srcs/constrs_1/imports/sysgen/decode_b.xdc]
+WARNING: [Designutils 20-1567] Use of 'set_multicycle_path' with '-hold' is not supported by synthesis. The constraint will not be passed to synthesis. [C:/Users/admin/Desktop/5b6b/Decode_B_2Mbps/hdl_netlist/decode_b.srcs/constrs_1/imports/sysgen/decode_b.xdc:8]
+WARNING: [Designutils 20-1567] Use of 'set_multicycle_path' with '-hold' is not supported by synthesis. The constraint will not be passed to synthesis. [C:/Users/admin/Desktop/5b6b/Decode_B_2Mbps/hdl_netlist/decode_b.srcs/constrs_1/imports/sysgen/decode_b.xdc:10]
+WARNING: [Designutils 20-1567] Use of 'set_multicycle_path' with '-hold' is not supported by synthesis. The constraint will not be passed to synthesis. [C:/Users/admin/Desktop/5b6b/Decode_B_2Mbps/hdl_netlist/decode_b.srcs/constrs_1/imports/sysgen/decode_b.xdc:12]
+WARNING: [Designutils 20-1567] Use of 'set_multicycle_path' with '-hold' is not supported by synthesis. The constraint will not be passed to synthesis. [C:/Users/admin/Desktop/5b6b/Decode_B_2Mbps/hdl_netlist/decode_b.srcs/constrs_1/imports/sysgen/decode_b.xdc:14]
+WARNING: [Designutils 20-1567] Use of 'set_multicycle_path' with '-hold' is not supported by synthesis. The constraint will not be passed to synthesis. [C:/Users/admin/Desktop/5b6b/Decode_B_2Mbps/hdl_netlist/decode_b.srcs/constrs_1/imports/sysgen/decode_b.xdc:16]
+WARNING: [Designutils 20-1567] Use of 'set_multicycle_path' with '-hold' is not supported by synthesis. The constraint will not be passed to synthesis. [C:/Users/admin/Desktop/5b6b/Decode_B_2Mbps/hdl_netlist/decode_b.srcs/constrs_1/imports/sysgen/decode_b.xdc:18]
+WARNING: [Designutils 20-1567] Use of 'set_multicycle_path' with '-hold' is not supported by synthesis. The constraint will not be passed to synthesis. [C:/Users/admin/Desktop/5b6b/Decode_B_2Mbps/hdl_netlist/decode_b.srcs/constrs_1/imports/sysgen/decode_b.xdc:20]
+WARNING: [Designutils 20-1567] Use of 'set_multicycle_path' with '-hold' is not supported by synthesis. The constraint will not be passed to synthesis. [C:/Users/admin/Desktop/5b6b/Decode_B_2Mbps/hdl_netlist/decode_b.srcs/constrs_1/imports/sysgen/decode_b.xdc:22]
+WARNING: [Designutils 20-1567] Use of 'set_multicycle_path' with '-hold' is not supported by synthesis. The constraint will not be passed to synthesis. [C:/Users/admin/Desktop/5b6b/Decode_B_2Mbps/hdl_netlist/decode_b.srcs/constrs_1/imports/sysgen/decode_b.xdc:24]
+Finished Parsing XDC File [C:/Users/admin/Desktop/5b6b/Decode_B_2Mbps/hdl_netlist/decode_b.srcs/constrs_1/imports/sysgen/decode_b.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/admin/Desktop/5b6b/Decode_B_2Mbps/hdl_netlist/decode_b.srcs/constrs_1/imports/sysgen/decode_b.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/decode_b_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/decode_b_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [C:/Users/admin/Desktop/5b6b/Decode_B_2Mbps/hdl_netlist/decode_b.srcs/constrs_1/new/cons.xdc]
+Finished Parsing XDC File [C:/Users/admin/Desktop/5b6b/Decode_B_2Mbps/hdl_netlist/decode_b.srcs/constrs_1/new/cons.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/admin/Desktop/5b6b/Decode_B_2Mbps/hdl_netlist/decode_b.srcs/constrs_1/new/cons.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/decode_b_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/decode_b_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 752.270 ; gain = 0.000
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 752.270 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 6 instances were transformed.
+  FDE => FDRE: 6 instances
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 752.270 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 752.270 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 752.270 ; gain = 490.941
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 752.270 ; gain = 490.941
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 752.270 ; gain = 490.941
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5544] ROM "temp_ce_vec" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "temp_ce_vec" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "temp_ce_vec" won't be mapped to RAM because it is too sparse
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 752.270 ; gain = 490.941
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      5 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 2     
++---XORs : 
+	   2 Input      1 Bit         XORs := 5     
++---Registers : 
+	                5 Bit    Registers := 1     
+	                3 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 8     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module xlclockdriver 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	                3 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module xlclockdriver__parameterized0 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	                3 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module xlclockdriver__parameterized1 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      5 Bit       Adders := 1     
++---Registers : 
+	                5 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module sysgen_logical_e16e76389c 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
+Module decode_b_xlp2s 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 5     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-5544] ROM "clockdriver_x1/temp_ce_vec" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "clockdriver_x0/temp_ce_vec" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "clockdriver/temp_ce_vec" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "decode_b_default_clock_driver/clockdriver_x1/temp_ce_vec" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "decode_b_default_clock_driver/clockdriver_x0/temp_ce_vec" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+WARNING: [Synth 8-3332] Sequential element (decode_b_default_clock_driver/clockdriver_x1/pipelined_ce.ce_pipeline_logic[0].ce_reg_logic/has_latency.fd_array[1].reg_comp_1/fd_prim_array[0].rst_comp.fdre_comp) is unused and will be removed from module decode_b.
+WARNING: [Synth 8-3332] Sequential element (decode_b_default_clock_driver/clockdriver_x1/pipelined_ce.ce_pipeline_logic[1].ce_reg_logic/has_latency.fd_array[1].reg_comp_1/fd_prim_array[0].rst_comp.fdre_comp) is unused and will be removed from module decode_b.
+WARNING: [Synth 8-3332] Sequential element (decode_b_default_clock_driver/clockdriver_x1/pipelined_ce.ce_pipeline_logic[2].ce_reg_logic/has_latency.fd_array[1].reg_comp_1/fd_prim_array[0].rst_comp.fdre_comp) is unused and will be removed from module decode_b.
+WARNING: [Synth 8-3332] Sequential element (decode_b_default_clock_driver/clockdriver_x1/pipelined_ce.ce_pipeline_logic[3].ce_reg_logic/has_latency.fd_array[1].reg_comp_1/fd_prim_array[0].rst_comp.fdre_comp) is unused and will be removed from module decode_b.
+WARNING: [Synth 8-3332] Sequential element (decode_b_default_clock_driver/clockdriver_x1/pipelined_ce.ce_pipeline_logic[4].ce_reg_logic/has_latency.fd_array[1].reg_comp_1/fd_prim_array[0].set_comp.fdse_comp) is unused and will be removed from module decode_b.
+WARNING: [Synth 8-3332] Sequential element (decode_b_default_clock_driver/clockdriver_x0/pipelined_ce.ce_pipeline_logic[0].ce_reg_logic/has_latency.fd_array[1].reg_comp_1/fd_prim_array[0].rst_comp.fdre_comp) is unused and will be removed from module decode_b.
+WARNING: [Synth 8-3332] Sequential element (decode_b_default_clock_driver/clockdriver_x0/pipelined_ce.ce_pipeline_logic[1].ce_reg_logic/has_latency.fd_array[1].reg_comp_1/fd_prim_array[0].rst_comp.fdre_comp) is unused and will be removed from module decode_b.
+WARNING: [Synth 8-3332] Sequential element (decode_b_default_clock_driver/clockdriver_x0/pipelined_ce.ce_pipeline_logic[2].ce_reg_logic/has_latency.fd_array[1].reg_comp_1/fd_prim_array[0].rst_comp.fdre_comp) is unused and will be removed from module decode_b.
+WARNING: [Synth 8-3332] Sequential element (decode_b_default_clock_driver/clockdriver_x0/pipelined_ce.ce_pipeline_logic[3].ce_reg_logic/has_latency.fd_array[1].reg_comp_1/fd_prim_array[0].rst_comp.fdre_comp) is unused and will be removed from module decode_b.
+WARNING: [Synth 8-3332] Sequential element (decode_b_default_clock_driver/clockdriver_x0/pipelined_ce.ce_pipeline_logic[4].ce_reg_logic/has_latency.fd_array[1].reg_comp_1/fd_prim_array[0].rst_comp.fdre_comp) is unused and will be removed from module decode_b.
+WARNING: [Synth 8-3332] Sequential element (decode_b_default_clock_driver/clockdriver/pipelined_ce.ce_pipeline_logic[0].ce_reg_logic/has_latency.fd_array[1].reg_comp_1/fd_prim_array[0].rst_comp.fdre_comp) is unused and will be removed from module decode_b.
+WARNING: [Synth 8-3332] Sequential element (decode_b_default_clock_driver/clockdriver/pipelined_ce.ce_pipeline_logic[1].ce_reg_logic/has_latency.fd_array[1].reg_comp_1/fd_prim_array[0].rst_comp.fdre_comp) is unused and will be removed from module decode_b.
+WARNING: [Synth 8-3332] Sequential element (decode_b_default_clock_driver/clockdriver/pipelined_ce.ce_pipeline_logic[2].ce_reg_logic/has_latency.fd_array[1].reg_comp_1/fd_prim_array[0].rst_comp.fdre_comp) is unused and will be removed from module decode_b.
+WARNING: [Synth 8-3332] Sequential element (decode_b_default_clock_driver/clockdriver/pipelined_ce.ce_pipeline_logic[3].ce_reg_logic/has_latency.fd_array[1].reg_comp_1/fd_prim_array[0].rst_comp.fdre_comp) is unused and will be removed from module decode_b.
+WARNING: [Synth 8-3332] Sequential element (decode_b_default_clock_driver/clockdriver/pipelined_ce.ce_pipeline_logic[4].ce_reg_logic/has_latency.fd_array[1].reg_comp_1/fd_prim_array[0].rst_comp.fdre_comp) is unused and will be removed from module decode_b.
+WARNING: [Synth 8-3332] Sequential element (decode_b_struct/parallel_to_serial/fd_array[0].capture/has_latency.fd_array[1].reg_comp_1/fd_prim_array[0].rst_comp.fdre_comp) is unused and will be removed from module decode_b.
+WARNING: [Synth 8-3332] Sequential element (decode_b_struct/serial_to_parallel/fd_array[5].comp/has_only_1.srlc33e_array0/reg_array[0].has_latency.u2) is unused and will be removed from module decode_b.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 752.270 ; gain = 490.941
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 752.270 ; gain = 490.941
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 752.270 ; gain = 490.941
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 752.270 ; gain = 490.941
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 752.270 ; gain = 490.941
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 752.270 ; gain = 490.941
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 752.270 ; gain = 490.941
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 752.270 ; gain = 490.941
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 752.270 ; gain = 490.941
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 752.270 ; gain = 490.941
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----+------+
+|      |Cell |Count |
++------+-----+------+
+|1     |BUFG |     1|
+|2     |LUT1 |     1|
+|3     |LUT2 |     3|
+|4     |LUT3 |     7|
+|5     |LUT4 |     8|
+|6     |LUT5 |     3|
+|7     |FDE  |     5|
+|8     |FDRE |    38|
+|9     |FDSE |     2|
+|10    |IBUF |     2|
+|11    |OBUF |     1|
++------+-----+------+
+
+Report Instance Areas: 
++------+---------------------------------------------+------------------------------------+------+
+|      |Instance                                     |Module                              |Cells |
++------+---------------------------------------------+------------------------------------+------+
+|1     |top                                          |                                    |    71|
+|2     |  decode_b_default_clock_driver              |decode_b_default_clock_driver       |    46|
+|3     |    clockdriver                              |xlclockdriver__parameterized1       |    18|
+|4     |      clr_reg                                |synth_reg_w_init__parameterized1_47 |     1|
+|5     |        \has_latency.fd_array[1].reg_comp_1  |single_reg_w_init_58                |     1|
+|6     |      \pipelined_ce.ce_pipeline[0].ce_reg    |synth_reg_w_init_48                 |     1|
+|7     |        \has_latency.fd_array[1].reg_comp_1  |single_reg_w_init_57                |     1|
+|8     |      \pipelined_ce.ce_pipeline[1].ce_reg    |synth_reg_w_init_49                 |     1|
+|9     |        \has_latency.fd_array[1].reg_comp_1  |single_reg_w_init_56                |     1|
+|10    |      \pipelined_ce.ce_pipeline[2].ce_reg    |synth_reg_w_init_50                 |     1|
+|11    |        \has_latency.fd_array[1].reg_comp_1  |single_reg_w_init_55                |     1|
+|12    |      \pipelined_ce.ce_pipeline[3].ce_reg    |synth_reg_w_init_51                 |     1|
+|13    |        \has_latency.fd_array[1].reg_comp_1  |single_reg_w_init_54                |     1|
+|14    |      \pipelined_ce.ce_pipeline[4].ce_reg    |synth_reg_w_init_52                 |     1|
+|15    |        \has_latency.fd_array[1].reg_comp_1  |single_reg_w_init_53                |     1|
+|16    |    clockdriver_x0                           |xlclockdriver__parameterized0       |    14|
+|17    |      clr_reg                                |synth_reg_w_init__parameterized1_35 |     1|
+|18    |        \has_latency.fd_array[1].reg_comp_1  |single_reg_w_init_46                |     1|
+|19    |      \pipelined_ce.ce_pipeline[0].ce_reg    |synth_reg_w_init_36                 |     1|
+|20    |        \has_latency.fd_array[1].reg_comp_1  |single_reg_w_init_45                |     1|
+|21    |      \pipelined_ce.ce_pipeline[1].ce_reg    |synth_reg_w_init_37                 |     1|
+|22    |        \has_latency.fd_array[1].reg_comp_1  |single_reg_w_init_44                |     1|
+|23    |      \pipelined_ce.ce_pipeline[2].ce_reg    |synth_reg_w_init_38                 |     1|
+|24    |        \has_latency.fd_array[1].reg_comp_1  |single_reg_w_init_43                |     1|
+|25    |      \pipelined_ce.ce_pipeline[3].ce_reg    |synth_reg_w_init_39                 |     1|
+|26    |        \has_latency.fd_array[1].reg_comp_1  |single_reg_w_init_42                |     1|
+|27    |      \pipelined_ce.ce_pipeline[4].ce_reg    |synth_reg_w_init_40                 |     1|
+|28    |        \has_latency.fd_array[1].reg_comp_1  |single_reg_w_init_41                |     1|
+|29    |    clockdriver_x1                           |xlclockdriver                       |    14|
+|30    |      clr_reg                                |synth_reg_w_init__parameterized1    |     2|
+|31    |        \has_latency.fd_array[1].reg_comp_1  |single_reg_w_init_34                |     2|
+|32    |      \pipelined_ce.ce_pipeline[0].ce_reg    |synth_reg_w_init_26                 |     1|
+|33    |        \has_latency.fd_array[1].reg_comp_1  |single_reg_w_init_33                |     1|
+|34    |      \pipelined_ce.ce_pipeline[1].ce_reg    |synth_reg_w_init_27                 |     1|
+|35    |        \has_latency.fd_array[1].reg_comp_1  |single_reg_w_init_32                |     1|
+|36    |      \pipelined_ce.ce_pipeline[2].ce_reg    |synth_reg_w_init_28                 |     1|
+|37    |        \has_latency.fd_array[1].reg_comp_1  |single_reg_w_init_31                |     1|
+|38    |      \pipelined_ce.ce_pipeline[3].ce_reg    |synth_reg_w_init_29                 |     1|
+|39    |        \has_latency.fd_array[1].reg_comp_1  |single_reg_w_init_30                |     1|
+|40    |      \pipelined_ce.ce_pipeline[4].ce_reg    |synth_reg_w_init__parameterized0    |     1|
+|41    |        \has_latency.fd_array[1].reg_comp_1  |single_reg_w_init__parameterized0   |     1|
+|42    |  decode_b_struct                            |decode_b_struct                     |    21|
+|43    |    parallel_to_serial                       |decode_b_xlp2s                      |     5|
+|44    |      \fd_array[1].capture                   |synth_reg_w_init_18                 |     1|
+|45    |        \has_latency.fd_array[1].reg_comp_1  |single_reg_w_init_25                |     1|
+|46    |      \fd_array[2].capture                   |synth_reg_w_init_19                 |     1|
+|47    |        \has_latency.fd_array[1].reg_comp_1  |single_reg_w_init_24                |     1|
+|48    |      \fd_array[3].capture                   |synth_reg_w_init_20                 |     1|
+|49    |        \has_latency.fd_array[1].reg_comp_1  |single_reg_w_init_23                |     1|
+|50    |      \fd_array[4].capture                   |synth_reg_w_init_21                 |     1|
+|51    |        \has_latency.fd_array[1].reg_comp_1  |single_reg_w_init_22                |     1|
+|52    |    serial_to_parallel                       |decode_b_xls2p                      |    16|
+|53    |      \fd_array[0].capture                   |synth_reg_w_init                    |     6|
+|54    |        \has_latency.fd_array[1].reg_comp_1  |single_reg_w_init_17                |     6|
+|55    |      \fd_array[0].comp                      |synth_reg                           |     1|
+|56    |        \has_only_1.srlc33e_array0           |srlc33e_16                          |     1|
+|57    |      \fd_array[1].capture                   |synth_reg_w_init_0                  |     1|
+|58    |        \has_latency.fd_array[1].reg_comp_1  |single_reg_w_init_15                |     1|
+|59    |      \fd_array[1].comp                      |synth_reg_1                         |     1|
+|60    |        \has_only_1.srlc33e_array0           |srlc33e_14                          |     1|
+|61    |      \fd_array[2].capture                   |synth_reg_w_init_2                  |     1|
+|62    |        \has_latency.fd_array[1].reg_comp_1  |single_reg_w_init_13                |     1|
+|63    |      \fd_array[2].comp                      |synth_reg_3                         |     1|
+|64    |        \has_only_1.srlc33e_array0           |srlc33e_12                          |     1|
+|65    |      \fd_array[3].capture                   |synth_reg_w_init_4                  |     1|
+|66    |        \has_latency.fd_array[1].reg_comp_1  |single_reg_w_init_11                |     1|
+|67    |      \fd_array[3].comp                      |synth_reg_5                         |     1|
+|68    |        \has_only_1.srlc33e_array0           |srlc33e_10                          |     1|
+|69    |      \fd_array[4].capture                   |synth_reg_w_init_6                  |     1|
+|70    |        \has_latency.fd_array[1].reg_comp_1  |single_reg_w_init_9                 |     1|
+|71    |      \fd_array[4].comp                      |synth_reg_7                         |     1|
+|72    |        \has_only_1.srlc33e_array0           |srlc33e                             |     1|
+|73    |      \fd_array[5].capture                   |synth_reg_w_init_8                  |     1|
+|74    |        \has_latency.fd_array[1].reg_comp_1  |single_reg_w_init                   |     1|
++------+---------------------------------------------+------------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 752.270 ; gain = 490.941
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 17 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:13 ; elapsed = 00:00:17 . Memory (MB): peak = 752.270 ; gain = 157.480
+Synthesis Optimization Complete : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 752.270 ; gain = 490.941
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 5 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 760.020 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 5 instances were transformed.
+  FDE => FDRE: 5 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+79 Infos, 66 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 760.020 ; gain = 509.539
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 760.020 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/admin/Desktop/5b6b/Decode_B_2Mbps/hdl_netlist/decode_b.runs/synth_1/decode_b.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file decode_b_utilization_synth.rpt -pb decode_b_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sat Dec 14 19:04:00 2019...
