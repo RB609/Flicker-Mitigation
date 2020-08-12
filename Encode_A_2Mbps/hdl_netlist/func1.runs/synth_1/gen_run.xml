@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="synth_1" LaunchPart="xc7a35ticsg324-1L" LaunchTime="1576330750">
+  <File Type="PA-TCL" Name="func1.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="func1_drc_synth.rpt"/>
+  <File Type="REPORTS-TCL" Name="func1_reports.tcl"/>
+  <File Type="RDS-RDS" Name="func1.vds"/>
+  <File Type="RDS-UTIL" Name="func1_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="func1_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="func1.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="func1_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="func1_timing_summary_synth.pb"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/imports/sysgen/conv_pkg.v">
+      <FileInfo SFType="VHeader">
+        <Attr Name="ImportPath" Val="$PPRDIR/../sysgen/conv_pkg.v"/>
+        <Attr Name="ImportTime" Val="1576328772"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/sysgen/func1_entity_declarations.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../sysgen/func1_entity_declarations.v"/>
+        <Attr Name="ImportTime" Val="1576328772"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/sysgen/synth_reg.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../sysgen/synth_reg.v"/>
+        <Attr Name="ImportTime" Val="1576328772"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/sysgen/synth_reg_w_init.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../sysgen/synth_reg_w_init.v"/>
+        <Attr Name="ImportTime" Val="1576328772"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/sysgen/xlclockdriver_rd.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../sysgen/xlclockdriver_rd.v"/>
+        <Attr Name="ImportTime" Val="1576328772"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/sysgen/func1.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../sysgen/func1.v"/>
+        <Attr Name="ImportTime" Val="1576328772"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/sysgen/convert_type.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../sysgen/convert_type.v"/>
+        <Attr Name="ImportTime" Val="1576328772"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="func1"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/imports/sysgen/func1_clock.xdc">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../sysgen/func1_clock.xdc"/>
+        <Attr Name="ImportTime" Val="1576328772"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/constrs_1/imports/sysgen/func1.xdc">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../sysgen/func1.xdc"/>
+        <Attr Name="ImportTime" Val="1576328772"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/constrs_1/new/cons.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018"/>
+    <Step Id="synth_design"/>
+  </Strategy>
+</GenRun>
